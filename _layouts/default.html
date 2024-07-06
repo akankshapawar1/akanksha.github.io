@@ -73,26 +73,10 @@
           </tr>
         </table>
 
-        <table>
-          <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+        <!-- <table>
+          <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-                <source src="images/nuvo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nuvo.jpg' width=100%>
-              </div>
-              <script type="text/javascript">
-                function nuvo_start() {
-                  document.getElementById('nuvo_image').style.opacity = "1";
-                }
-      
-                function nuvo_stop() {
-                  document.getElementById('nuvo_image').style.opacity = "0";
-                }
-                nuvo_stop()
-              </script>
+              <img src='images/nuvo.jpg' width=100%>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://pratulsrinivasan.github.io/nuvo/">
@@ -102,7 +86,7 @@
               <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
               <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
               <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-          <strong>Jonathan T. Barron</strong>,
+              <strong>Jonathan T. Barron</strong>,
               <a href="https://bmild.github.io/">Ben Mildenhall</a>
               <br>
               <em>arXiv</em>, 2023
@@ -118,50 +102,20 @@
               </p>
             </td>
           </tr>
-        </table>
+        </table> -->
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
-              {{post.authors}}
-
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}">arxiv</a> /
-              {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
-              {% endif %}
-              <p></p>
               {{ post.excerpt }}
             </td>
           </tr>
-          {% endif %}
-          {% endfor %}
           {% endfor %}
         </table>
         <br>
