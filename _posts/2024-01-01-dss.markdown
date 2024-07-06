@@ -5,9 +5,7 @@ date:   2024-01-01 18:08:39 +00:00
 image: /images/Lhotse1.png
 ---
 A web application which on users can buy and sell computers
-*This is a web application on which store owners can sell computers and customers can buy them.
-*The site manager can oversee all the stores, the products they sell and collect commission from store owners on every purchase.
-*The customer can enter their address to view the shipping cost of the products, filter products based on computer specifications, list all the stores and buy computers.
-*The store owners can update computer prices and delete computers if they are not sold.
-*The application backend was developed using AWS Lambda, Amazon API Gateway and Amazon RDS. The sitemanager commission was automatically updated on purchase using SQL trigger on RDS.
-*The application frontend was developed using React and Material UI. It was deployed using Amazon S3.
+
+The application backend was developed using AWS Lambda, Amazon API Gateway and Amazon RDS. The sitemanager commission was automatically updated on purchase using SQL trigger on RDS.
+
+The application frontend was developed using React and Material UI. It was deployed using Amazon S3.
