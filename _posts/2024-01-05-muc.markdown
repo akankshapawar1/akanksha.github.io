@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "MEANS - Medical Emergency Automated Notification System"
+date:   2024-01-01 18:08:39 +00:00
+image: /images/android.png
+---
+Kotlin-based Android app that enables automatic detection of falls using sensor data and emergency room visits, triggering alerts to emergency contacts with the user’s location

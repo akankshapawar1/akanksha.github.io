@@ -5,7 +5,5 @@ date:   2024-01-01 18:08:39 +00:00
 image: /images/Lhotse1.png
 ---
 A web application which on users can buy and sell computers
-
 The application backend was developed using AWS Lambda, Amazon API Gateway and Amazon RDS. The sitemanager commission was automatically updated on purchase using SQL trigger on RDS.
-
 The application frontend was developed using React and Material UI. It was deployed using Amazon S3.

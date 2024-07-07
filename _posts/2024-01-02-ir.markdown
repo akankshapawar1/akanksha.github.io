@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "AnimeFlix"
+date:   2024-01-01 18:08:39 +00:00
+image: /images/animeflix1.png
+---
+A recommendation system for personalized anime suggestions 
